@@ -125,3 +125,27 @@
     opacity: 1;
   }
 }
+@media (max-width: 520px) {
+  .card {
+    width: 350px;
+    padding: 30px 25px;
+  }
+  .search {
+    width: 100%;
+    margin-right: 5px;
+  }
+  .search input {
+    width: 230px;
+    height: 40px;
+  }
+  .search button {
+    width: 40px;
+    height: 40px;
+  }
+  .temp {
+    font-size: 30px;
+  }
+  .details {
+    padding: 0 5px;
+  }
+}
