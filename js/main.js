@@ -9,6 +9,8 @@ const temp = document.querySelector('.temp')
 const cityName = document.querySelector('.city')
 const humidity = document.querySelector('.humidity')
 const wind = document.querySelector('.wind')
+const body = document.querySelector('.body')
+
 
 async function getWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
@@ -37,4 +39,6 @@ async function getWeather(city) {
 
 searchBtn.addEventListener('click', () => {
     getWeather(searchBox.value)
+    weather.classList.add('active')
 })
+AOS.init()
